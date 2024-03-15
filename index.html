@@ -36,6 +36,10 @@
             <h2> Programming Languages Skills</h2>
         <table bgcolor="black" width="700">
             <tr align="center">
+                <td> Skill</td>
+                <td> Level</td>
+            </tr>
+            <tr align="center">
                 <td bgcolor="grey"> Python</td>
                 <td bgcolor="lightgrey"> Intermediate</td>
                 <tr align="center">
@@ -74,5 +78,20 @@
         </div>
 
     </table>
+
+        <form>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="button" value="Cambiar Sección" onclick="document.getElementById('seccionCambiante').textContent = document.getElementById('fname').value;">
+            </form>
+            
+            <div id="seccionCambiante">
+            <!-- Aquí se mostrará el valor ingresado -->
+            </div>
+
+            
+        </form>
     </body>
 </html>
